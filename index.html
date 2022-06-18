@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- link icons -->
+</head>
+<body>
+  
+  <header>
+    <div class="header-content">
+      <ul id="menu" class="sticky-nav">
+        <li><a href="#about" class="menu-item">About Us</a></li>
+        <li><a href="#products" class="menu-item">Products</a></li>
+        <li><a class="menu-item">Contact Us</a></li>
+      </ul>
+      <div class="customer">
+        <div id="account">
+          <img src="res/avatar-default.png" alt="customer avatar">
+          <h3 class="username">John Marshal</h3>
+        </div>
+        <div id="in-cart">
+          <img src="res/shoppingcart.png" alt="shoppingcart">
+          <p class="cart-count">0</p>
+        </div>
+      </div>
+      <h1>Welcome to H2Joe</h1>
+      <p>
+        H2Joe is a website that allows you to find the best water for your needs.
+      </p>
+      <p id="toAbout">
+        <a href="#about">
+          <svg width="200" height="140">
+            <polygon points="100,120 190,78 100,120 10,78"
+            style="stroke:#fff;stroke-width:10;" />
+          </svg>
+      </p>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="facts">
+        <div class="fact">
+          <!-- money sign -->
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Great Prices</h3>
+          <p >
+            Any time you need water, you can find it here, at afforadble prices. Prices are almost identical to those in the market. elit. Amet sunt voluptatem id perferendis omnis sequi, odio assumenda totam doloribus recusandae mollitia 
+          </p>
+        </div>
+        <div class="fact">
+          <!-- multiple items -->
+          <!-- brands -->
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Variety</h3>
+          <p >
+            We have a wide range of products that you can choose from. Aquafina, Fiji, VOS and more of your favorites!  sit amet consectetur adipisicing elit. Ipsa fugit eius tempora recusandae dolorem, veniam hic! Tempore, itaque. Deserunt dolorum quam.
+          </p>
+        </div>
+        <div class="fact">
+          <i class="fas fa-recycle"></i>
+          <h3>Recyclable</h3>
+          <p >
+            H2Joe Helps the enviornment by using water in it's original containers. We also offer recycling services locally. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sed corrupti architecto iure fugiat ex, quisquam.
+          </p>
+        </div>
+      </div>
+      <p id="foot-note">We're a company that cares about our customers hydration. We redistribute any brand of water you can think of and if we don't have it in stock, we'll buy it from the nearest supplier at no extra cost for you! 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quod odio ad quia, itaque sequi, earum ipsam, hic sit animi illum assumenda minus voluptates aperiam veritatis doloribus libero esse quam.
+      </p>
+
+      <p id="toProducts">
+        <a href="#products">
+          <svg width="200" height="140">
+            <polygon points="100,120 190,78 100,120 10,78"
+            style="stroke:#333;stroke-width:10;" />
+          </svg>
+        </a>
+      </p>
+    </section>
+    <section id="products">
+      
+      <h2>Products</h2>
+      <div id="purchasing-wrapper">
+        <div id="viewing-modal">
+          <div id="modal-content">
+
+            <div class="modal-header">
+              <h2>Aquafina</h1>
+              <span id="viewing-modal-close">&times;</span>
+            </div>
+
+            <div id="modal-body">
+              <div class="product-image">
+                <img src="res/products/Aquafina-logo.jpg" alt="product image">
+              </div>
+              <div class="product-info">
+                <form action="#">
+                  <table>
+                    <tr>
+                      <td></td>
+                      <td>Single</td>
+                      <td>6Pack</td>
+                      <td>12Pack</td>
+                      <td>24Pack</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p>$<span class="price">1.99</span></p>
+                        <input type="number" value="0" min="0" max="10" class="quantity">
+                      </td>
+                      <td>
+                        <p>$<span class="price">9.99</span></p>
+                        <input type="number" value="0" min="0" max="10" class="quantity">
+                      </td>
+                      <td>
+                        <p>$<span class="price">19.99</span></p>
+                        <input type="number" value="0" min="0" max="10" class="quantity">
+                      </td>
+                      <td>
+                        <p>$<span class="price">39.99</span></p>
+                        <input type="number" value="0" min="0" max="10" class="quantity">
+                      </td>
+                    </tr> 
+                  </table>
+                  <div class="product-add">
+                    <button type="submit">Add to Cart</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-container">
+          <div class="product">
+            <img src="res/products/Aquafina-logo.jpg" alt="aquafina"/>
+          </div>
+          <div class="product">
+            <img src="res/products/Purelife-logo.png" alt="purelife"/>
+          </div>
+          <div class="product">
+            <img src="res/products/Voss-logo.jpg" alt="voss"/>
+          </div>
+          <div class="product">
+            <img src="res/products/Dasani-logo.jpg" alt="dasani"/>
+          </div>
+          <div class="product">
+            <img src="res/products/Fiji-logo.jpg" alt="fiji"/>
+          </div>
+          <div class="product">
+            <img src="res/products/Zephyrhills-logo.jpg" alt="zephyrhills"/>
+          </div>
+          <div class="product">
+            <img src="res/products/Aquafina-logo.jpg" alt="majestica"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p id="cr">
+        Copyright reserved to H2Joe 2022 <span id="disclaimer">A made up company by Jose Vazquez</span>
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
