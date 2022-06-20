@@ -102,41 +102,38 @@
               <div class="product-image">
                 <img src="res/products/Aquafina-logo.jpg" alt="product image">
               </div>
-              <div class="product-info">
-                <form action="#">
-                  <table>
-                    <tr>
-                      <td></td>
-                      <td>Single</td>
-                      <td>6Pack</td>
-                      <td>12Pack</td>
-                      <td>24Pack</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td>
-                        <p>$<span class="price">1.99</span></p>
-                        <input type="number" value="0" min="0" max="10" class="quantity">
-                      </td>
-                      <td>
-                        <p>$<span class="price">9.99</span></p>
-                        <input type="number" value="0" min="0" max="10" class="quantity">
-                      </td>
-                      <td>
-                        <p>$<span class="price">19.99</span></p>
-                        <input type="number" value="0" min="0" max="10" class="quantity">
-                      </td>
-                      <td>
-                        <p>$<span class="price">39.99</span></p>
-                        <input type="number" value="0" min="0" max="10" class="quantity">
-                      </td>
-                    </tr> 
-                  </table>
-                  <div class="product-add">
-                    <button type="submit">Add to Cart</button>
-                  </div>
-                </form>
-              </div>
+              <form class="product-info" action="#">
+                <table>
+                  <tr>
+                    <td class="sizes selectedqty">Single</td>
+                    <td class="sizes">6Pack</td>
+                    <td class="sizes">12Pack</td>
+                    <td class="sizes">24Pack</td>
+                  </tr>
+                  <tr>
+                    <td class="qty-select single selectedqty">
+                      <p>$<span class="price">1.99</span></p>
+                      <input type="number" value="0" min="0" max="10" class="quantity">
+                    </td>
+                    <td class="qty-select sixpack">
+                      <p>$<span class="price">9.99</span></p>
+                      <input type="number" value="0" min="0" max="10" class="quantity">
+                    </td>
+                    <td class="qty-select dozen">
+                      <p>$<span class="price">19.99</span></p>
+                      <input type="number" value="0" min="0" max="10" class="quantity">
+                    </td>
+                    <td class="qty-select case24">
+                      <p>$<span class="price">39.99</span></p>
+                      <input type="number" value="0" min="0" max="10" class="quantity">
+                    </td>
+                  </tr>
+
+                  <th colspan="4">
+                    <button class="product-add" type="submit">Add to  Cart</button>
+                  </th>
+                </table>
+              </form>
             </div>
           </div>
         </div>
